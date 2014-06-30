@@ -28,6 +28,13 @@ $ git push -f origin HEAD^:master
 $ git log origin/master..master
 ```
 
+#### forkしたリポジトリの変更を取り入れる
+
+```
+$ git remote add upstream <forked_repo_uri> ## add remote 
+$ git fetch upstream
+$ git merge upstream/master ## cherry-pickでもいいかも
+```
 
 ### branch操作系
 
